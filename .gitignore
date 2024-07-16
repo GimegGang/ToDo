@@ -1,0 +1,12 @@
+# GoLand project files
+.idea/
+
+# Ignore .iml files
+*.iml
+
+# Ignore workspace.xml
+workspace.xml
+
+# Ignore all other GoLand specific files
+*.iws
+shelf/

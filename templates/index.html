@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/style.css">
+    <title>ToDo List</title>
+</head>
+<body>
+
+<form method="POST">
+    <input name="title" type="text" placeholder="Title">
+    <input name="desc" placeholder="Desc"/>
+    <button type="submit">Add</button>
+</form>
+
+{{range .}}
+    <div class="todo" data-id="{{.Id}}">
+        <h2>{{.Title}}</h2>
+        <p>{{.Description}}</p>
+        <div class="bar">
+            <a class="done" href="/done/{{.Id}}">Done</a>
+            <div class="edit">edit</div>
+        </div>
+    </div>
+{{end}}
+
+<script src="/static/ToDo.js"></script>
+
+</body>
+</html>

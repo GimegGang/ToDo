@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+body{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.todo{
+    width: 30%;
+    margin: 10px auto;
+    text-align: center;
+    border: #292929 2px solid;
+    border-radius: 10px;
+}
+
+form{
+    text-align: center;
+    margin-bottom: 50px;
+}
+form input{
+    width: 20%;
+    height: 1px;
+    padding: 1%;
+    border: #292929 2px solid;
+    border-radius: 10px;
+    font-size: 1.2em;
+}
+form button{
+    background: white;
+    border: #292929 2px solid;
+    /*font-size: 1.3em;*/
+    border-radius: 10px;
+    padding: 0.4%;
+}
+form button:hover{
+    cursor: pointer;
+}
+/*.done{
+    color: black;
+    margin: 10px auto;
+    width: 10%;
+    display: block;
+}*/
+.bar{
+    display: flex;
+    column-gap: 10px;
+    justify-content: center;
+}
+.edit{
+    cursor: pointer;
+}
+.editInp{
+    width: 90%;
+    padding: 1%;
+    height: 15px;
+    margin: 5px 0;
+}
+.editB{
+    padding: 0.5% 3%;
+}
